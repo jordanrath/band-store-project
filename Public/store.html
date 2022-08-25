@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Bad Omens | Store</title> 
+    <meta name="description" content="Bad Omens description">
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js" async></script> 
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">BAD O|||ENS</h1>
+    </header>
+      <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+              <span class="shop-item-title">THE DEATH OF PIECE OF MIND</span>
+              <span class="shop-item-titles shop-item-child">Red Orange Splatter Record</span>
+            <img class="shop-item-image" src="Images\RedOrangeRecord.webp">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$30.00</span>
+              <button id="add-btn" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="shop-item"> 
+              <span class="shop-item-title">THE DEATH OF PIECE OF MIND</span>
+              <span class="shop-item-titles shop-item-child">Orange Record</span>
+            <img class="shop-item-image" src="Images\OrangeRecord.webp">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$28.99</span>
+              <button id="add-btn" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="shop-item">
+              <span class="shop-item-title">THE DEATH OF PIECE OF MIND</span>
+              <span class="shop-item-titles shop-item-child">Smoke Record</span>
+            <img class="shop-item-image" src="Images\SmokeRecord.webp">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$28.99</span>
+              <button id="add-btn" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+
+            <div class="shop-item">
+              <span class="shop-item-title">THE DEATH OF PIECE OF MIND</span>
+              <span class="shop-item-titles shop-item-child">CD & Digital Download</span>
+            <img class="shop-item-image" src="Images\PhysicalCD.webp">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$14.99</span>
+              <button id="add-btn" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-titles">Bad Omens T-Shirt</span>
+            <img class="shop-item-image" src="Images\T-Shirt.webp">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$23.00</span>
+              <button id="add-btn" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="shop-item">
+            <span class="shop-item-titles">Bad Omens Coffee Mug</span>
+            <img class="shop-item-image" src="Images\CoffeeMug.webp">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$18.00</span>
+              <button id="add-btn" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"> 
+        </div>
+      <div class="cart-total">
+        <!-- <span class="cart-empty">Your cart is currently empty...</span> -->
+        <span class="cart-total-title">Total</span>
+        <span id="total-price" class="cart-total-price">$0.00</span>
+      </div>
+        <!-- <button id="btn-purchase" class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
+      </section>
+
+      <button data-modal-target="#modal" class="modal-btn">PURCHASE</button>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title"><img class="title-image" src="Images\BadOmensSymbol.png">BAD OMENS</div>
+          <button data-close-button class="modal-close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          Thank you for your purchase!
+          
+        </div>
+        <!-- <button class="modal-feedback-accept feedback-btn">Accept</button>
+        <button class="modal-feedback-decline feedback-btn">Decline</button> -->
+      </div>
+      <div id="overlay"></div>
+
+
+
+
+
+
+      <footer class="main-footer">
+        <div class="container main-footer-container">
+          <h3 class="band-name">BAD O|||ENS</h3>
+          <ul class="nav footer-nav">
+            <li>
+              <a href="https://www.youtube.com/user/SumerianRecords" target="_blank">
+                <img src="Images\YouTube Logo.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/artist/3Ri4H12KFyu98LMjSoij5V" target="_blank">
+                <img src="Images\Spotify Logo.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/badomensofficial/" target="_blank">
+                <img src="Images\Facebook Logo.png">
+              </a>
+            </li>
+          </ul>
+        </div> 
+      </footer>
+    </body>
+  </html>

@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Orbitron:wght@600&display=swap');
+
+/*@font-face {
+    font-family: "Orbitron-VariableFont_wght";
+    src: url("Fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("tff");
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+* {
+    box-sizing: border-box;
+    font-family: Chivo;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /*display: flex;
+    flex-direction: column; */
+    /* background-color: rgb(70, 7, 7) */
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* .about.main-footer {
+    height: 100vh;
+} */
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block; /* allows you to add padding etc to inline elements */
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {     /* styles the home, store, & about */
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3); /* creates a line under the elements */
+}
+
+.main-nav li {
+    padding: 0 5%; /* 0 padding top and bottom and 5% left and right */
+}
+
+.main-header {
+    background-color: rgb(0, 0, 0, .6);
+    background-image: url("Images/headerPhoto.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Orbitron";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1200px; /* makes it so the container element doesn't excede 900pixels */
+    margin: 0 auto; /* top and bottom to 0 and the left and right side set to as large as the need to be to scale with the screen */
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Orbitron";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em; /* 2.5* bigger */
+}
+
+.about-band-photo {
+    float: left;
+    width: 40%;
+    height: 40%;
+    margin: 15px;
+    border-radius: 50%; /* to make the image a circle */
+}
+
+.main-footer {
+    background-color: rgb(135, 39, 39);
+    color: white;
+    padding: .25em 0;
+    margin-top: auto;
+}
+
+.main-footer-container {
+    display: flex; /* complex way to work with containers */
+    align-items: center;  /* add the class nav to the footer to give it the attributes above to style it */
+}
+
+.main-footer-container ul {
+    flex-grow: 1;   /* working with our icons telling them to take up as much space as possible on the side */
+    text-align: end;  /* moves them to the end of the page */
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {  /* select all of the icon images to style smaller */
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%; /* top, right, bottom, left*/
+    color: white;
+    border: 2px solid rgb(135, 39, 39);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0%; /* makes it perfectly square... no rounded edges */
+    font-size: 1.5em; /* 50% larger */
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto; /* centers our button in the screen, but because buttons are not block level elements(have auto margin)... we need to make it a block element */
+    color: rgb(135, 39, 39);
+    font-size: 4em;
+    border-radius: 50%; /* make it a circle... remove padding */
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;  /* last child of the tour rows style */
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em; /* pads the date to the right ***inline elements can not have a width applied to them...'change the display' */
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 42%;
+}
+
+.tour-arena {
+    width: 24%;
+}
+
+.tour-btn {
+    max-width: 19%; /* element will never be larger than 19% of screen */
+}
+
+.tour-vid {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    color: white;
+    background-color: rgb(135, 39, 39);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: rgb(102, 30, 30);
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block; /* put it on its own line */
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px;
+}
+
+.shop-item-titles {
+    display: block; /* put it on its own line */
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px;
+}
+
+.shop-item-child {
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;  /* allows us to center vertically in the same line */
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1; /* makes it so the price takes up as much width as possible... shoving the button over */
+    color: #333;
+}
+
+.shop-items {
+    display: flex;  /* makes it so the items are all in line, then we wrap so if an item hits the side of the screen it goes to the next line */
+    flex-wrap: wrap;
+    justify-content: space-around; /* puts even amount of space between the elements */
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;      /* make the column more maluable and align-items in the center of the columns */
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;  /* get all the items on one line */
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {       /* total of the widths === 100% because we're using flex box(doesn't add extra spaces like inline-block) */
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;   /* height auto adjusts to width */
+    border-radius: 10px; /* rounds the borders */
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;    /* makes input the same height as the button */
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(135, 39, 39);
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;  /* separates the input from the button */
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+                                            /* creating a full black line under the last column and then removing the borders from that column */
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+/*.cart-empty {
+    font-size: large;
+    font-weight: bold;
+    margin-right: 75%;
+}*/
+
+.btn-purchase {
+    display: block;     /* change the display so we can use auto margins */
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.modal {
+    position: fixed; /* we want the modal to follow the user */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-btn {
+    color: white;
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    padding: 1.5%;
+    background-color: rgb(135, 39, 39);
+    font-weight: bold;
+    border: none;
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background-color: rgb(102, 30, 30);
+}
+
+.feedback-btn {
+    color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1.5%;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+    display: inline-block;
+    cursor: pointer;
+    float: none;
+}
+
+/*.modal-feedback-accept {
+    background-color: rgb(4, 129, 4);
+    margin: 10px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.modal-feedback-decline {
+    background-color: rgb(187, 11, 11);
+    margin: 10px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.feedback-btn:hover {
+    background-color: #CC4C4C
+}
+
+.modal-feedback-accept:hover {
+    background-color: rgb(77, 219, 58);
+}
+
+.modal-feedback-decline:hover {
+    background-color: rgb(102, 30, 30);
+}*/
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex; /* so the items line up side by side */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.modal-header .title-image {
+    width: 40px;
+    height: 40px;
+}
+
+/*span {
+    text-decoration: line-through;
+}*/
+
+.modal-close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-close-button:hover {
+    background-color: whitesmoke;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    margin: 2% 2% 2% 2%;
+    font-size: 1.25rem;
+}
+
+#overlay {
+    position: fixed; /* so it follows the user when scrolling */
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none; /* when overlay is invisible the modal button doesnt work */
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
