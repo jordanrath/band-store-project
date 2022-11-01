@@ -3,7 +3,7 @@
   "name": "band-store-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
   },
   "repository": "https://github.com/jordanrath/band-store-project",
