@@ -2,13 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Orbitron:wght@600&display=swap');
 
-/*@font-face {
-    font-family: "Orbitron-VariableFont_wght";
-    src: url("Fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("tff");
-    font-weight: normal;
-    font-style: normal;
-}*/
-
 * {
     box-sizing: border-box;
     font-family: Chivo;
@@ -19,9 +12,6 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    /*display: flex;
-    flex-direction: column; */
-    /* background-color: rgb(70, 7, 7) */
 }
 
 .about {
@@ -29,10 +19,6 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
 }
-
-/* .about.main-footer {
-    height: 100vh;
-} */
 
 .nav ul {
     margin: 0;
@@ -366,12 +352,6 @@ html, body {
     font-size: 1.1em;
 }
 
-/*.cart-empty {
-    font-size: large;
-    font-weight: bold;
-    margin-right: 75%;
-}*/
-
 .btn-purchase {
     display: block;     /* change the display so we can use auto margins */
     margin: 40px auto 80px auto;
@@ -427,32 +407,6 @@ html, body {
     float: none;
 }
 
-/*.modal-feedback-accept {
-    background-color: rgb(4, 129, 4);
-    margin: 10px 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.modal-feedback-decline {
-    background-color: rgb(187, 11, 11);
-    margin: 10px 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.feedback-btn:hover {
-    background-color: #CC4C4C
-}
-
-.modal-feedback-accept:hover {
-    background-color: rgb(77, 219, 58);
-}
-
-.modal-feedback-decline:hover {
-    background-color: rgb(102, 30, 30);
-}*/
-
 .modal-header {
     padding: 10px 15px;
     display: flex; /* so the items line up side by side */
@@ -471,10 +425,6 @@ html, body {
     width: 40px;
     height: 40px;
 }
-
-/*span {
-    text-decoration: line-through;
-}*/
 
 .modal-close-button {
     cursor: pointer;
@@ -510,4 +460,18 @@ html, body {
 #overlay.active {
     opacity: 1;
     pointer-events: all;
+}
+
+@media only screen and (max-width:1200px) {
+    .tour-vid {
+       width: 80%;
+    }
+}
+
+@media only screen and (max-width:1165px) {
+    .main-footer {
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+    }
 }
