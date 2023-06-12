@@ -6,7 +6,6 @@
 - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-<!-- - [Acknowledgements](#acknowledgements) -->
 
 ## Overview
 
@@ -25,9 +24,4 @@ Built with JavaScript, HTML, and CSS.
 
 ## Contact
 
-<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
 LinkedIn - https://www.linkedin.com/in/jordan-rath-521660264/
-
-<!-- ## Acknowledgements -->
-
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as 'major contributors' to your skill set for this project. -->
